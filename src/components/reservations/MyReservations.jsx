@@ -23,7 +23,6 @@ const Myreservations = () => {
 
   const getHouse = (houseId) => housesReducer.houses.find((house) => house.id === houseId) || {};
   const filteredReservations = reservationsReducer.filter((reservation) => typeof reservation.house === 'number');
-  console.log(filteredReservations);
 
   return (
     <section className="my-reservation-container">
